@@ -51,14 +51,11 @@ class _HomeState extends State<Home> {
 
                   final strSecs = secs < 10 ? '0$secs' : '$secs';
 
-                  print(
-                      ' ---- days: $days | hours: $hours | mins: $mins | secs: $secs');
-
                   return Container(
-                    constraints: BoxConstraints(maxWidth: 300),
+                    constraints: const BoxConstraints(maxWidth: 300),
                     decoration: BoxDecoration(
                         color: Colors.white.withOpacity(0.5),
-                        borderRadius: BorderRadius.all(Radius.circular(8))),
+                        borderRadius: const BorderRadius.all(Radius.circular(8))),
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Column(
@@ -79,19 +76,19 @@ class _HomeState extends State<Home> {
                             ),
                           ),
                           const SizedBox(height: 20),
-                          Text(
+                          const Text(
                             'FAQ',
-                            style: const TextStyle(
+                            style: TextStyle(
                               fontSize: 28,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          Column(
+                          const Column(
                             children: [
                               ExpansionTile(
                                 title: Text(
                                   'Date & Time',
-                                  style: const TextStyle(
+                                  style: TextStyle(
                                     fontSize: 18,
                                     fontWeight: FontWeight.normal,
                                   ),
@@ -100,7 +97,7 @@ class _HomeState extends State<Home> {
                                   ListTile(
                                     title: Text(
                                       'Saturaday, July 1st 2023 at 9:00 am',
-                                      style: const TextStyle(
+                                      style: TextStyle(
                                         fontSize: 18,
                                         fontWeight: FontWeight.normal,
                                       ),
@@ -111,7 +108,7 @@ class _HomeState extends State<Home> {
                               ExpansionTile(
                                 title: Text(
                                   'Where does Federica needs to be at above Date & Time?',
-                                  style: const TextStyle(
+                                  style: TextStyle(
                                     fontSize: 18,
                                     fontWeight: FontWeight.normal,
                                   ),
@@ -120,7 +117,7 @@ class _HomeState extends State<Home> {
                                   ListTile(
                                       title: Text(
                                     'Tate Tanglewood',
-                                    style: const TextStyle(
+                                    style: TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.normal,
                                     ),
@@ -130,7 +127,7 @@ class _HomeState extends State<Home> {
                               ExpansionTile(
                                 title: Text(
                                   'What does Federica needs to bring?',
-                                  style: const TextStyle(
+                                  style: TextStyle(
                                     fontSize: 18,
                                     fontWeight: FontWeight.normal,
                                   ),
@@ -139,7 +136,7 @@ class _HomeState extends State<Home> {
                                   ListTile(
                                     title: Text(
                                       'Her hot ass and good actitude',
-                                      style: const TextStyle(
+                                      style: TextStyle(
                                         fontSize: 18,
                                         fontWeight: FontWeight.normal,
                                       ),
@@ -150,7 +147,7 @@ class _HomeState extends State<Home> {
                               ExpansionTile(
                                 title: Text(
                                   'Does Federica needs specific clothes for the activities?',
-                                  style: const TextStyle(
+                                  style: TextStyle(
                                     fontSize: 18,
                                     fontWeight: FontWeight.normal,
                                   ),
@@ -159,7 +156,7 @@ class _HomeState extends State<Home> {
                                   ListTile(
                                     title: Text(
                                       'She needs confortable clothes and maybe clothes that she doesnt mind to stain.',
-                                      style: const TextStyle(
+                                      style: TextStyle(
                                         fontSize: 18,
                                         fontWeight: FontWeight.normal,
                                       ),
